@@ -6,7 +6,7 @@ const NoticeTimer = () => {
   const [timeLeft, setTimeLeft] = useState('');
   
   // Set Last Working Day (LWD) - you can modify this date
-  const lastWorkingDay = new Date('2024-10-15T23:59:59'); // October 15th, 2024
+  const lastWorkingDay = new Date('2025-10-15T23:59:59'); // October 15th, 2025
   
   useEffect(() => {
     const calculateTimeLeft = () => {
