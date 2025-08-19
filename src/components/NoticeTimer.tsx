@@ -6,7 +6,7 @@ const NoticeTimer = () => {
   const [timeLeft, setTimeLeft] = useState('');
   
   // Set Last Working Day (LWD) - you can modify this date
-  const lastWorkingDay = new Date('2024-12-31'); // Change this to actual LWD
+  const lastWorkingDay = new Date('2024-10-15'); // Change this to actual LWD
   
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -33,18 +33,20 @@ const NoticeTimer = () => {
   }, [lastWorkingDay]);
   
   return (
-    <Card className="glass-card p-3 mb-6 border-primary/20">
-      <div className="flex items-center justify-center gap-2 text-sm">
-        <Clock className="w-4 h-4 text-primary animate-pulse" />
-        <span className="text-muted-foreground">Serving Notice Period, LWD is:</span>
-        <span className="font-mono font-bold text-primary gradient-text">
+    <Card className="bg-primary/10 border-primary/30 p-4 mb-6 shadow-lg">
+      <div className="flex items-center justify-center gap-3 text-base">
+        <Clock className="w-5 h-5 text-primary animate-pulse" />
+        <span className="text-foreground font-medium">Serving Notice Period, LWD is:</span>
+        <span className="font-mono font-bold text-primary text-lg">
           {lastWorkingDay.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'short', 
             day: 'numeric' 
           })}
         </span>
-        <span className="text-xs text-muted-foreground">({timeLeft})</span>
+        <span className="text-sm text-primary font-semibold bg-primary/20 px-2 py-1 rounded">
+          ({timeLeft})
+        </span>
       </div>
     </Card>
   );

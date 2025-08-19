@@ -35,6 +35,17 @@ const Hero = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Personal Info */}
         <div className="space-y-8">
+          {/* Profile Image */}
+          <div className="flex justify-center lg:justify-start mb-6">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/0e86a3c8-eb63-478e-9b30-057077bae07d.png" 
+                alt="Sharad Srivastav - Technical Support Lead"
+                className="w-32 h-32 rounded-full object-cover border-4 border-primary/30 shadow-xl"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+            </div>
+          </div>
           <div className="space-y-4">
             <h1 className="text-5xl font-bold leading-tight">
               <span className="gradient-text">Sharad Srivastav</span>
