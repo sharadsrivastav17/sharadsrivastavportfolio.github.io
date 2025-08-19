@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pt-20">
         <NoticeTimer />
         
         <section id="home">
