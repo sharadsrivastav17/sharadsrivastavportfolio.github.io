@@ -81,3 +81,10 @@
     "vite": "^5.4.19"
   }
 }
+"homepage": "https://sharadsrivastav171.github.io/sharadsrivastavportfolio.github.io"
+"scripts": {
+  "build": "your-build-command",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
