@@ -83,7 +83,7 @@
 }
 "homepage": "https://sharadsrivastav171.github.io/sharadsrivastavportfolio.github.io"
 "scripts": {
-  "build": "your-build-command",
+  "build": "vite build",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
