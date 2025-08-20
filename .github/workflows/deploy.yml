@@ -29,3 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          # Optional: Uncomment below if you want to keep history
+          # keep_files: true
